@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <ListView
+        android:id="@+id/listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </ListView>
+
+    <!-- 리스트뷰의 항목이 없을 때 보여질 뷰 -->
+    <!-- GONE처리 안해도 자바에서 setEmptyView()설정하면 자동으로 GONE처리됨 -->
+    <!-- 만약 리스트가 비어있으면 자동 visible 됨.반대로 리스트뷰는 gone처리됨...-->
+    <TextView
+        android:id="@+id/tv_nodata"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="NO DATA"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>
